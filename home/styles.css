@@ -1,0 +1,280 @@
+.col-sm div {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+.col-sm p {
+    font-size: 0.8rem;
+}
+a,ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+section {
+    padding:2rem;
+}
+h4 {
+    font-weight: 400;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    
+
+}
+.navbar a{
+    font-family: Comfortaa;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.navlinks{
+    width: 100% !important;
+}
+
+
+@media (min-width:992px) {
+    .container {
+        position: relative;
+    }
+    .nav-logo{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .navlinks li:nth-child(4) {
+        margin-left: auto;
+    }
+    
+    
+}
+.navbar-toggler-icon{
+    background-color: rgb(255, 187, 0);
+    border-radius: 0.3rem;
+}
+@media (max-width:992px) {
+    .navbar .collapse{
+        left: 0;
+        background-color: #222;
+    }
+    
+    
+}
+
+@media (max-width:992px) {
+    .navbar {
+        background-color: #222;
+        
+    }
+    .navbar-brand img{
+        width: 80px;
+    }
+    
+}
+.background-img {
+    z-index: 1;
+    background-image: url("https://www.bikefixo.com/img/front/home-banner-bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    padding: 10rem 0;
+    position: relative;
+}
+.background-img::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    height: 5rem;
+    width: 100%;
+    background-color: white;
+    clip-path: polygon(0 0, 50% 100%, 0 100%, 0 0, 0 0);
+}
+.background-img::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    height: 5rem;
+    width: 100%;
+    background-color: white;
+    clip-path: polygon(100% 0, 100% 100%, 50% 100%, 100% 0, 100% 0);
+}
+
+
+
+.home-banner-form{
+    text-align: center;
+}
+
+
+
+
+/* /////// */
+
+.title {
+    text-align: center;
+    padding: 1rem 0;
+}
+.bike {
+    font-size: 1.5rem;
+}
+.bike i {
+    background-color: white;
+    padding: 0 0.5rem;
+    z-index: 1;
+    position: relative;
+    bottom: -1rem;
+
+}
+.line {
+    
+    margin: auto;
+    background-color: yellow;
+    width: 7rem;
+    height: 2px;
+}
+/* ///////// */
+
+/* .section_1  */
+.carousel_1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+.left{
+    flex: 1;
+    background-image: url("https://www.bikefixo.com/data/media/orginal/service-slide1-9290.jpg");
+    background-repeat: no-repeat;
+}
+.right{
+    padding: 5rem 1rem;
+}
+.btnn{
+    top: 45%;
+    background-color: #222;
+    border-radius: 0.3rem;
+    
+    width: 30px;
+    height: 30px;
+    
+}
+.unslede{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.unslede li {
+    margin: 0.5rem;
+}
+.unslede li::before {
+    content: "\2022";
+    color: yellow;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+ }
+.btn-appoint{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+
+
+
+
+.section_2 {
+    background-image: url("https://www.bikefixo.com/img/front/why-bikefixo-header.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+.section_2 .bike i {
+    background-color: #1111119f;
+}
+.row {
+    text-align: center;
+}
+
+.section_3 img{
+    filter: invert(1);
+}
+
+.button {
+    text-align: center;
+}
+.button a{
+    border-radius: 2rem;
+    background: linear-gradient(to right,#444,rgb(255, 221, 0));
+    padding: 0.5rem 2.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+
+
+
+.section_4 {
+    background-image: url("https://www.bikefixo.com/img/front/brands-service.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.section_4 .brand-logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+.section_4 .bike i{
+    background-color: #33333374;
+
+
+}
+.about li{
+    display: flex;
+   align-items: center;
+   gap: 1rem;
+}
+
+.contact{
+    background-image: url("https://www.bikefixo.com/img/front/why-bikefixo-header.jpg");
+    background-size: cover;
+    color: white;
+    text-align: center;
+
+}
+span{
+    color: chocolate;
+}
+
+.footer-links ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    justify-content: center;
+}
+.footer-links li  {
+    display: flex;
+    align-items: center;
+    
+    gap: 1rem;
+}
+.us-about{
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.align-left {
+    text-align: left;
+}
+
+
+.full {
+    transition: all 0.3s;
+    width: 100px;
+}
